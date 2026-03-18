@@ -3,7 +3,7 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;700&display=swap');
 
-:root{
+:root {
   --primary-bg: #223a5f;
   --white: #ffffff;
 }
@@ -15,7 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
