@@ -1,0 +1,79 @@
+/* src/App.css */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;700&display=swap');
+
+:root{
+  --primary-bg: #223a5f;
+  --white: #ffffff;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Page background and base font */
+body {
+  background-color: var(--primary-bg);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+}
+
+/* App container */
+.app-root {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Centering helper */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Generic button reset for any plain buttons (popup trigger etc.) */
+button {
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/* Rules trigger button (used by RulesPopup trigger) */
+.rules-trigger {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Small screens adjustments */
+@media screen and (max-width: 576px) {
+  .app-root {
+    padding: 12px;
+  }
+}
+
+/* Ensure images inside components don't overflow */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
